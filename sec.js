@@ -53,5 +53,5 @@ async function showEvents(eventsPromise) {
 
 fetch(eventsUrl)
     .then((response) => showEvents(response.json()))
-    .then(() => console.warn("Failed to load events"));
+    .then(() => {});
 
